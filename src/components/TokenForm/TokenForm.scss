@@ -1,0 +1,115 @@
+@import '../../constants/colors';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.TokenForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $black;
+
+  &__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.form {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    &__name {
+      font-size: 12px;
+      color: $darkGrey;
+      margin-bottom: 5px;
+    }
+
+    &__label {
+      cursor: pointer;
+    }
+
+    &__select {
+      width: max-content;
+      border: none;
+    }
+
+    &__checkbox {
+      position: absolute;
+      opacity: 0;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    &__text {
+      position: relative;
+      left: 25px;
+      font-weight: 500;
+    }
+
+    &__checkbox:checked ~ &__checkmark {
+      background-color: $darkRed;
+      border: 2px solid $border;
+    }
+
+    &__checkbox:checked ~ &__checkmark:after {
+      display: block;
+    }
+
+    &__checkmark {
+      position: absolute;
+      height: 13px;
+      width: 13px;
+      background-color: $white;
+      border: 1px solid $border;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    max-width: 130px;
+    min-height: 36px;
+    font-size: 16px;
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background-color: $darkRed;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $theDarkestRed;
+    }
+  }
+  
+  &__supply {
+    position: relative;
+    margin-bottom: 60px;
+  }
+}
