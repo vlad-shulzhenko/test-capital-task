@@ -9,7 +9,7 @@ export const blockchainButtons = [
 ];
 
 export const footerLinks = [
-  { name: 'Terms', href: '/', id: 1 },
-  { name: 'Privacy', href: '/', id: 2 },
-  { name: 'Faq', href: '/', id: 3 },
+  { name: 'Terms', href: '/test-capital-task/', id: 1 },
+  { name: 'Privacy', href: '/test-capital-task/', id: 2 },
+  { name: 'Faq', href: '/test-capital-task/', id: 3 },
 ];
